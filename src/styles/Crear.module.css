@@ -1,0 +1,140 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  } .bigTitle {
+    font-size: 4rem;
+    color: #000000;
+   
+  }
+  .titleContainer {
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  
+  .background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  }
+  
+  .circle {
+  position: absolute;
+  right: 95px;
+  top: 42%;
+  transform: translateY(-50%);
+  width: 385px;
+  height: 385px;
+  border-radius: 50%;
+  overflow: hidden;
+  }
+  
+  .circle img {
+  width: 75%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 50%;
+  }
+  
+  .rectangle {
+    box-sizing: border-box;
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-start: 30px;
+    transform: translateY(-50%);
+    inline-size: calc(100% - 60px);
+    block-size: 500px;
+    background: rgba(84, 116, 134, 0.8);
+    mix-blend-mode: normal;
+    border: 1px solid #000000;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  
+  
+
+
+  
+  .title {
+  font-size: 4rem;
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .subtitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 30px;
+  }
+  
+  .label {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  
+font-family: 'Homenaje';
+font-style: normal;
+
+
+
+
+
+color: #FFFFFF;
+
+
+  }
+  
+  .input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  font-family: 'Homenaje';
+font-style: normal;
+background: #A2B5B0;
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 100px;
+  }
+  
+  .loginButton {
+    background: #A2B5B0;
+    border: 1px solid #000000;
+  margin-top: 30em;
+  margin-right: 10em;
+  padding: 10px 20px;
+  border-radius: 100px;
+  cursor: pointer;
+  width: 250PX;
+  height: 50px;
+  }
+
+
+
+.forgotPassword {
+  font-size: 14px;
+  margin-block-start: 20px;
+  cursor: pointer;
+}
+
+.createAccount {
+  font-size: 14px;
+  margin-block-start: 20px;
+  cursor: pointer;
+}

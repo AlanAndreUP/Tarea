@@ -1,0 +1,153 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .circle {
+    position: absolute;
+    left: 155px;
+    top: 55%;
+    transform: translateY(-50%);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .rectangle {
+    box-sizing: border-box;
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-end: 5%; /* ajusta este valor para cambiar la posición horizontal */
+    transform: translateY(-50%);
+    inline-size: 350px; /* ajusta este valor para cambiar el ancho */
+    block-size: 500px; /* ajusta este valor para cambiar el alto */
+    background: rgba(84, 116, 134, 0.8);
+    mix-blend-mode: normal;
+    border: 1px solid #000000;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .bigTitle {
+    font-size: 3rem;
+    color: #000000;
+   
+  }
+  .titleContainer {
+    position: absolute;
+    left: 30%;
+    top: 2%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .rectangle {
+    box-sizing: border-box;
+    position: absolute;
+    right: 120px; /* para colocarlo a la izquierda */
+    top: 50%; /* para centrarlo verticalmente */
+    transform: translateY(-50%);
+    width: 300px;
+    height: 500px;
+    background: rgba(84, 116, 134, 0.8);
+    mix-blend-mode: normal;
+    border: 1px solid #000000;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 50px; /* para separarlo de la parte inferior */
+    padding: 20px; /* para agregar un poco de espacio alrededor del contenido */
+    text-align: center; /* para alinear el contenido a la izquierda */
+  }
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-block-start: 0;
+    margin-block-end: 20px;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    margin-block-start: 20px;
+  }
+  
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+  }
+  
+  .label {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    
+  font-family: 'Homenaje';
+  font-style: normal;
+  
+  
+  
+  
+  
+  color: #FFFFFF;
+  
+  
+    }
+    
+    .input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-family: 'Homenaje';
+  font-style: normal;
+  background: #A2B5B0;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+    }
+    
+    .loginButton {
+      background: #A2B5B0;
+      border: 1px solid #000000;
+    
+    padding: 10px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 150PX;
+    height: 50px;
+    }
+  
+  
+  .forgotPassword {
+    font-size: 14px;
+    margin-block-start: 20px;
+    cursor: pointer;
+  }
+  
+  .createAccount {
+    font-size: 14px;
+    margin-block-start: 20px;
+    cursor: pointer;
+  }
+  
