@@ -30,7 +30,7 @@ export default function Home() {
   >
     <div className={styles.container}>
       <Image
-        src="/2.png"
+        src="https://alanandreup.github.io/Tarea/2.png"
         alt="background image"
         layout="fill"
         objectFit="cover"
@@ -53,7 +53,7 @@ export default function Home() {
           <Link href='/' className={styles.label}>Ya tienes cuenta Inicia sesion</Link>
         </div>
         <div className={styles.circle}>
-          <Image src="/3.png" alt="Círculo" layout="fill" objectFit="cover" />
+          <Image src="https://alanandreup.github.io/Tarea/3.png" alt="Círculo" layout="fill" objectFit="cover" />
         </div>
         <div className={styles.buttonContainer}>
         <button className={styles.loginButton} onClick={handleClick}>
