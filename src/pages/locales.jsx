@@ -24,7 +24,7 @@ export default function Home() {
   >
     <div className={styles.container}>
          <Image
-        src="https://alanandreup.github.io/Tarea/21.png"
+        src="https://alanandreup.github.io/Tarea/20.png"
         alt="background image"
          layout="fill"
       sizes="(max-width: 768px) 100vw,
