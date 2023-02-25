@@ -26,7 +26,7 @@ export default function EligeOpcion() {
     >
       <div className={styles.container}>
         <Image
-          src="/5.png"
+          src="https://alanandreup.github.io/Tarea/5.png"
           alt="background image"
           layout="fill"
           objectFit="cover"
@@ -59,7 +59,7 @@ export default function EligeOpcion() {
           ><Link href="/edificios">
               <div className={styles.carouselItem}>
                 <div className={styles.imageContainer}>
-                  <Image src="/10.png" alt="Building" width={150} height={250} />
+                  <Image src="https://alanandreup.github.io/Tarea/10.png" alt="Building" width={150} height={250} />
                   <p className={styles.imageText}>EDIFICIOS</p>
                 </div>
               </div>
@@ -67,7 +67,7 @@ export default function EligeOpcion() {
             <Link href="/local">
               <div className={styles.carouselItem}>
                 <div className={styles.imageContainer}>
-                  <Image src="/11.png" alt="Building" width={150} height={250} />
+                  <Image src="https://alanandreup.github.io/Tarea/11.png" alt="Building" width={150} height={250} />
                   <p className={styles.imageText}>PISOS</p>
                 </div>
               </div>
@@ -75,7 +75,7 @@ export default function EligeOpcion() {
             <Link href="/pisos">
               <div className={styles.carouselItem}>
                 <div className={styles.imageContainer}>
-                  <Image src="/12.png" alt="Building" width={150} height={250} />
+                  <Image src="https://alanandreup.github.io/Tarea/12.png" alt="Building" width={150} height={250} />
                   <p className={styles.imageText}>LOCALES</p>
                 </div>
               </div>
