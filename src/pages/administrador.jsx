@@ -1,9 +1,12 @@
 import { Carousel } from 'react-responsive-carousel';
 import { FaBuilding, FaStoreAlt, FaHome } from 'react-icons/fa';
 import Image from 'next/image';
+import Link from 'next/link';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import styles from '@/styles/Administrador.module.css';
 import { motion } from 'framer-motion';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+
 
 
 const phrases = [
@@ -23,7 +26,7 @@ export default function EligeOpcion() {
     >
       <div className={styles.container}>
         <Image
-          src="https://alanandreup.github.io/Tarea/5.png"
+          src="/5.png"
           alt="background image"
           layout="fill"
           objectFit="cover"
@@ -39,26 +42,44 @@ export default function EligeOpcion() {
             showStatus={false}
             autoPlay={true}
             infiniteLoop={true}
-          >
-            <div className={styles.carouselItem}>
-              <div className={styles.imageContainer}>
-                <Image src="https://alanandreup.github.io/Tarea/10.png" alt="Building" width={150} height={250} />
-                <p className={styles.imageText}>EDIFICIOS</p>
+            renderArrowPrev={(onClickHandler, hasPrev, label) =>
+              hasPrev && (
+                <button type="button" onClick={onClickHandler} title={label} className="carousel-arrow carousel-arrow-prev">
+                  <FaChevronLeft />
+                </button>
+              )
+            }
+            renderArrowNext={(onClickHandler, hasNext, label) =>
+              hasNext && (
+                <button type="button" onClick={onClickHandler} title={label} className="carousel-arrow carousel-arrow-next">
+                  <FaChevronRight />
+                </button>
+              )
+            }
+          ><Link href="/edificios">
+              <div className={styles.carouselItem}>
+                <div className={styles.imageContainer}>
+                  <Image src="/10.png" alt="Building" width={150} height={250} />
+                  <p className={styles.imageText}>EDIFICIOS</p>
+                </div>
               </div>
-            </div>
-
-            <div className={styles.carouselItem}>
-              <div className={styles.imageContainer}>
-                <Image src="https://alanandreup.github.io/Tarea/11.png" alt="Building" width={150} height={250} />
-                <p className={styles.imageText}>PISOS</p>
+            </Link>
+            <Link href="/local">
+              <div className={styles.carouselItem}>
+                <div className={styles.imageContainer}>
+                  <Image src="/11.png" alt="Building" width={150} height={250} />
+                  <p className={styles.imageText}>PISOS</p>
+                </div>
               </div>
-            </div>
-            <div className={styles.carouselItem}>
-              <div className={styles.imageContainer}>
-                <Image src="https://alanandreup.github.io/Tarea/12.png" alt="Building" width={150} height={250} />
-                <p className={styles.imageText}>LOCALES</p>
+            </Link>
+            <Link href="/pisos">
+              <div className={styles.carouselItem}>
+                <div className={styles.imageContainer}>
+                  <Image src="/12.png" alt="Building" width={150} height={250} />
+                  <p className={styles.imageText}>LOCALES</p>
+                </div>
               </div>
-            </div>
+            </Link>
           </Carousel>
         </div>
 
