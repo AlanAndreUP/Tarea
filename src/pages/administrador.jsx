@@ -14,7 +14,7 @@ const phrases = [
   'A veces las cosas buenas tardan tiempo.',
   'Si no puedes volar, corre. Si no puedes correr, camina. Si no puedes caminar, gatea, pero sigue avanzando hacia adelante.',
   'Nunca te rindas. Los milagros ocurren todos los días.',
-  'Sigue tus sueños, ellos saben el camino.',
+  'Sigue tus sueños, ellos saben el caminoa.',
 ];
 
 export default function EligeOpcion() {
