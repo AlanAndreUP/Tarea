@@ -26,7 +26,7 @@ export default function EligeOpcion() {
     >
       <div className={styles.container}>
         <Image
-          src="https://alanandreup.github.io/Tarea/20.png"
+          src="https://alanandreup.github.io/Tarea/5.png"
           alt="background image"
           layout="fill"
           objectFit="cover"
