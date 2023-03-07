@@ -6,16 +6,46 @@ import Image from 'next/image'
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import {Swal } from 'sweetalert2';
 export default function Home() {
   const router = useRouter();
-
+  const validarCorreo = (correo) => {
+    const expresion = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return expresion.test(correo);
+  }
+  const validarContrasena = (contrasena) => {
+    const expresion = /^(?=.*[A-Z])[a-zA-Z0-9]{6,}$/;
+    return expresion.test(contrasena);
+  }
+  const mostrarAlerta = (esCorrecto) => {
+    if (esCorrecto) {
+      Swal.fire({
+        icon: 'success',
+        title: 'Inicio Correcto',
+      }).then(() => {
+        router.push('/administrador');
+      });
+    } else {
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'El correo electrónico o la contraseña no son válidos',
+      });
+    }
+  }
+  
   const handleClick = () => {
-    // Aquí iría el código para cambiar la contraseña
-
-    // Redirigimos al usuario a la página principal
-    router.push('/administrador');
-    alert('Inicio Correcto ');
+    const correo = document.getElementById('correo').value;
+    const contrasena = document.getElementById('contrasena').value;
+  
+    if (!validarCorreo(correo) || !validarContrasena(contrasena)) {
+      mostrarAlerta(false);
+    } else {
+      mostrarAlerta(true);
+    }
   };
+  
+  
   return (
     <motion.div 
     initial={{ opacity: 0 }}
@@ -39,12 +69,15 @@ export default function Home() {
         <p className={`${styles.title} ${styles.bigTitle}`}>INMOBILIARIA</p>
       </div>
       <div className={styles.rectangle}>
+        <for></for>
         <p className={styles.subtitle}>INICIO DE SESION</p>
         <div className={styles.inputContainer}>
           <p className={styles.label}>USUARIO</p>
-          <input type="text" className={styles.input} />
+          <input type="text" className={styles.input} id="correo" />
+
+
           <p className={styles.label}>CONTRASEÑA</p>
-          <input type="password" className={styles.input} />
+          <input type="password" className={styles.input} id="contrasena" />
         </div>
        
         <Link href='/recuperar' className={styles.forgotPassword}>Olvidaste tu contraseñaa</Link>
