@@ -56,10 +56,10 @@ export default function Home() {
   
     if (!validarCorreo(correo) ) {
       mostrarAlerta(false);
-    }  if (!validarContrasena(contraseña)) {
+    }  if (!validarContrasena(contrasena)) {
       mostrarAlerta1(false);
     }
-   if(validarCorreo(correo)&&validarContraseña(contraseña)){
+   if(validarCorreo(correo)&&validarContraseña(contrasena)){
       mostrarAlerta(true);
     }
     
