@@ -59,7 +59,7 @@ export default function Home() {
     }  if (!validarContrasena(contrasena)) {
       mostrarAlerta1(false);
     }
-   if(validarCorreo(correo)&&validarContraseña(contrasena)){
+   if(validarCorreo(correo)&&validarContrasena(contrasena)){
       mostrarAlerta(true);
     }
     
