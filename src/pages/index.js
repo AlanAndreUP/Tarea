@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import {Swal } from 'sweetalert2';
+import Swal from 'sweetalert2';
 export default function Home() {
   const router = useRouter();
   const validarCorreo = (correo) => {
