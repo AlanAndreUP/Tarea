@@ -33,16 +33,36 @@ export default function Home() {
       });
     }
   }
+  const mostrarAlerta1 = (esCorrecto) => {
+    if (esCorrecto) {
+      Swal.fire({
+        icon: 'success',
+        title: 'Inicio Correcto',
+      }).then(() => {
+        router.push('/administrador');
+      });
+    } else {
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'El  la contraseña no es valida',
+      });
+    }
+  }
   
   const handleClick = () => {
     const correo = document.getElementById('correo').value;
     const contrasena = document.getElementById('contrasena').value;
   
-    if (!validarCorreo(correo) || !validarContrasena(contrasena)) {
+    if (!validarCorreo(correo) ) {
       mostrarAlerta(false);
-    } else {
+    }  if (!validarContrasena(contraseña)) {
+      mostrarAlerta1(false);
+    }
+   if(validarCorreo(correo)&&validarContraseña(contraseña)){
       mostrarAlerta(true);
     }
+    
   };
   
   
