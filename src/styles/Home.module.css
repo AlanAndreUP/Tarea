@@ -1,19 +1,20 @@
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 100vh;
-  position: relative;
 }
 
 .circle {
   position: absolute;
-  left: 155px;
-  top: 55%;
-  transform: translateY(-50%);
-  width: 500px;
-  height: 500px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 80vw;
+  max-width: 500px;
+  max-height: 500px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -29,53 +30,56 @@
   box-sizing: border-box;
   position: absolute;
   inset-block-start: 50%;
-  inset-inline-end: 5%; /* ajusta este valor para cambiar la posición horizontal */
+  inset-inline-end: 5%;
   transform: translateY(-50%);
-  inline-size: 350px; /* ajusta este valor para cambiar el ancho */
-  block-size: 500px; /* ajusta este valor para cambiar el alto */
+  inline-size: 80vw;
+  block-size: 50vw;
+  max-width: 350px;
+  max-height: 500px;
   background: rgba(84, 116, 134, 0.8);
   mix-blend-mode: normal;
   border: 1px solid #000000;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 50px;
 }
-.bigTitle {
-  font-size: 4rem;
-  color: #000000;
- 
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .circle {
+    left: 155px;
+    top: 55%;
+    transform: translateY(-50%);
+    width: 500px;
+    height: 500px;
+  }
+
+  .rectangle {
+    right: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 500px;
+  }
 }
+
 .titleContainer {
   position: absolute;
-  left: 30%;
+  left: 50%;
   top: 2%;
   transform: translateX(-50%);
   z-index: 1;
 }
 
-
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.bigTitle {
+  font-size: 4rem;
+  color: #000000;
 }
 
-.rectangle {
-  box-sizing: border-box;
-  position: absolute;
-  right: 120px; /* para colocarlo a la izquierda */
-  top: 50%; /* para centrarlo verticalmente */
-  transform: translateY(-50%);
-  width: 300px;
-  height: 500px;
-  background: rgba(84, 116, 134, 0.8);
-  mix-blend-mode: normal;
-  border: 1px solid #000000;
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-bottom: 50px; /* para separarlo de la parte inferior */
-  padding: 20px; /* para agregar un poco de espacio alrededor del contenido */
-  text-align: center; /* para alinear el contenido a la izquierda */
-}
 .title {
   font-size: 24px;
   font-weight: bold;
@@ -100,43 +104,41 @@
   margin-bottom: 10px;
   color: white;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
-  
-font-family: 'Homenaje';
-font-style: normal;
+  font-family: 'Homenaje';
+  font-style: normal;
+  color: #FFFFFF;
+}
 
-
-
-
-
-color: #FFFFFF;
-
-
-  }
-  
-  .input {
+.input {
   padding: 10px;
   border: none;
   border-radius: 5px;
   font-size: 1.4rem;
   margin-bottom: 20px;
   font-family: 'Homenaje';
-font-style: normal;
-background: #A2B5B0;
-border: 1px solid #000000;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 100px;
-  }
-  
-  .loginButton {
-    background: #A2B5B0;
-    border: 1px solid #000000;
-  
+  font-style: normal;
+  background: #A2B5B0;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+}
+ .loginButton {
+  background: #A2B5B0;
+  border: 1px solid #000000;
   padding: 10px 20px;
   border-radius: 100px;
   cursor: pointer;
   width: 150PX;
   height: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .loginButton {
+    width: 100%;
+    margin-top: 20px;
   }
+}
+
 
 
 .forgotPassword {
