@@ -8,7 +8,7 @@ const testimonials = [
       author: {
         name: "Eve Porcello",
         role: "Arquitecta",
-        image: "/eve.jpg",
+        image: "https://alanandreup.github.io/Tarea/eve.jpg",
       },
     },
 
@@ -19,7 +19,7 @@ const testimonials = [
       author: {
         name: "Arthur Dvorkin",
         role: "Panadero",
-        image: "/arthur.jpg",
+        image: "https://alanandreup.github.io/Tarea/arthur.jpg",
       },
     },
   ],
@@ -31,7 +31,7 @@ const testimonials = [
       author: {
         name: "Ade Dada",
         role: "Localero",
-        image: "/ade.jpeg",
+        image: "https://alanandreup.github.io/Tarea/ade.jpeg",
       },
     },
     {
@@ -41,7 +41,7 @@ const testimonials = [
       author: {
         name: "Rob Attfield",
         role: "Ingeniero Industrial",
-        image: "/rob.jpg",
+        image: "https://alanandreup.github.io/Tarea/rob.jpg",
       },
     },
   ],
@@ -53,7 +53,7 @@ const testimonials = [
       author: {
         name: "Music",
         role: "Empleado",
-        image: "/music.jpg",
+        image: "https://alanandreup.github.io/Tarea/music.jpg",
       },
     },
     {
@@ -62,7 +62,7 @@ const testimonials = [
       author: {
         name: "Noricumbo ",
         role: "Maestro de la Up",
-        image: "/github.jpg",
+        image: "https://alanandreup.github.io/Tarea/github.jpg",
       },
     },
   ],
