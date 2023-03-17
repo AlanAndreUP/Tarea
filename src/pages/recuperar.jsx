@@ -18,7 +18,7 @@ export default function Home() {
       title: 'Contraseña Cambiada con exito ',
     }).then(() => {
       // Redirigimos al usuario a la página principal
-      router.push('/');
+      router.push('/loginadministrador');
     });
   };
   return (

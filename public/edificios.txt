@@ -1,0 +1,4 @@
+0, Tienda, Local, 1000
+1, Sears, Edificio, 3000
+3, Oxxo, Local, 4000
+4, Coca Cola, Edificio, 4000

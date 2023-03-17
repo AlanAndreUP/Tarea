@@ -56,7 +56,7 @@ export default function EligeOpcion() {
                 </button>
               )
             }
-          ><Link href="/edificios">
+          ><Link href="/VistaAdministrador">
               <div className={styles.carouselItem}>
                 <div className={styles.imageContainer}>
                   <Image src="https://alanandreup.github.io/Tarea/10.png" alt="Building" width={150} height={250} />
@@ -64,7 +64,7 @@ export default function EligeOpcion() {
                 </div>
               </div>
             </Link>
-            <Link href="/local">
+            <Link href="/VistaAdministrador">
               <div className={styles.carouselItem}>
                 <div className={styles.imageContainer}>
                   <Image src="https://alanandreup.github.io/Tarea/11.png" alt="Building" width={150} height={250} />
@@ -72,7 +72,7 @@ export default function EligeOpcion() {
                 </div>
               </div>
             </Link>
-            <Link href="/pisos">
+            <Link href="/VistaAdministrador">
               <div className={styles.carouselItem}>
                 <div className={styles.imageContainer}>
                   <Image src="https://alanandreup.github.io/Tarea/12.png" alt="Building" width={150} height={250} />

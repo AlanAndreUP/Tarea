@@ -9,14 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/tailwindcss": "^0.1.2",
     "@next/font": "13.1.6",
+    "@tailwindcss/forms": "^0.5.3",
+    "autoprefixer": "^10.4.14",
+    "bootstrap": "^5.2.3",
+    "chart.js": "^4.2.1",
+    "classnames": "^2.3.2",
     "framer-motion": "^9.1.6",
     "next": "13.1.6",
     "notyf": "^3.10.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "postcss": "^8.4.21",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+    "react-modal": "^3.16.1",
     "react-responsive-carousel": "^3.2.23",
-    "sweetalert2": "^11.7.2"
+    "reactstrap": "^9.1.6",
+    "sweetalert2": "^11.7.2",
+    "tailwindcss": "^3.2.7",
+    "validator": "^13.9.0"
   }
 }

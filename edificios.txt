@@ -1,0 +1,2 @@
+Tienda, Local, 1000
+Sears, , 3000

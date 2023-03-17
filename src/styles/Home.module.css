@@ -4,8 +4,38 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-image: url('https://alanandreup.github.io/Tarea/2.png');
+  background-size: cover;
+  background-position: center;
 }
 
+.rectangle {
+  box-sizing: border-box;
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-end: 5%;
+  transform: translateY(-50%);
+  inline-size: 80vw;
+  block-size: 50vw;
+  max-width: 22.91667em; /* equivalente a 350px */
+  max-height: 31.25em; /* equivalente a 500px */
+  background: rgba(84, 116, 134, 0.8);
+  mix-blend-mode: normal;
+  border: 0.0625em solid #000000; /* equivalente a 1px */
+  box-shadow: inset 0px 0.16667em 0.16667em rgba(0, 0, 0, 0.25);
+  padding: 1.25em; /* equivalente a 20px */
+  text-align: center;
+  margin-bottom: 3.125em; /* equivalente a 50px */
+}
+
+@media (min-width: 48em) {
+  .rectangle {
+    inline-size: 70vw;
+    block-size: 60vh;
+    max-width: 37.5em; /* equivalente a 600px */
+    max-height: 50em; /* equivalente a 800px */
+  }
+}
 .circle {
   position: absolute;
   left: 50%;
@@ -19,31 +49,27 @@
   overflow: hidden;
 }
 
-.circle img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
+@media (min-width: 576px) {
+  .circle {
+    max-width: 600px;
+    max-height: 600px;
+  }
 }
 
-.rectangle {
-  box-sizing: border-box;
-  position: absolute;
-  inset-block-start: 50%;
-  inset-inline-end: 5%;
-  transform: translateY(-50%);
-  inline-size: 80vw;
-  block-size: 50vw;
-  max-width: 350px;
-  max-height: 500px;
-  background: rgba(84, 116, 134, 0.8);
-  mix-blend-mode: normal;
-  border: 1px solid #000000;
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 50px;
+@media (min-width: 768px) {
+  .circle {
+    max-width: 800px;
+    max-height: 800px;
+  }
 }
+
+@media (min-width: 992px) {
+  .circle {
+    max-width: 1000px;
+    max-height: 1000px;
+  }
+}
+
 
 @media screen and (min-width: 768px) {
   .container {
@@ -78,6 +104,8 @@
 .bigTitle {
   font-size: 4rem;
   color: #000000;
+  font-family: 'Homenaje';
+  font-style: normal;
 }
 
 .title {
@@ -129,7 +157,9 @@
   border-radius: 100px;
   cursor: pointer;
   width: 150PX;
-  height: 50px;
+  height: 50px;font-size: 0.8rem;
+  font-family: 'Homenaje';
+  font-style: normal;
 }
 
 @media only screen and (max-width: 600px) {
@@ -144,7 +174,8 @@
 .forgotPassword {
   font-size: 14px;
   margin-block-start: 20px;
-  cursor: pointer;
+  cursor: pointer; font-family: 'Homenaje';
+  font-style: normal;
 }
 
 .createAccount {

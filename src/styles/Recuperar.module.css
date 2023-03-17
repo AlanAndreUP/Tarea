@@ -41,6 +41,8 @@
   .bigTitle {
     font-size: 3rem;
     color: #000000;
+    font-family: 'Homenaje';
+    font-style: normal;
    
   }
   .titleContainer {
@@ -49,6 +51,8 @@
     top: 2%;
     transform: translateX(-50%);
     z-index: 1;
+    font-family: 'Homenaje';
+    font-style: normal;
   }
   
   
@@ -81,11 +85,15 @@
     font-weight: bold;
     margin-block-start: 0;
     margin-block-end: 20px;
+    font-family: 'Homenaje';
+    font-style: normal;
   }
   
   .subtitle {
     font-size: 18px;
     margin-block-start: 20px;
+    font-family: 'Homenaje';
+    font-style: normal;
   }
   
   .inputContainer {
@@ -135,7 +143,9 @@
     border-radius: 100px;
     cursor: pointer;
     width: 150PX;
-    height: 50px;
+    height: 50px;font-size: 0.8rem;
+    font-family: 'Homenaje';
+    font-style: normal;
     }
   
   
