@@ -7,7 +7,7 @@ module.exports = {
   ...nextConfig,
   images: {
     domains: ['alanandreup.github.io'],
-     imunoptimized = true,
+     unoptimized = true,
   },
 }
 
