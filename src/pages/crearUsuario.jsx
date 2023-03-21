@@ -28,7 +28,7 @@ const Home = () => {
         icon: 'success',
         title: 'Inicio Correcto',
       }).then(() => {
-        router.push('/index');
+        router.push('/');
       });
     } else {
       Swal.fire({
@@ -44,7 +44,7 @@ const Home = () => {
         icon: 'success',
         title: 'Inicio Correcto',
       }).then(() => {
-        router.push('/index');
+        router.push('/');
       });
     } else {
       Swal.fire({
@@ -110,7 +110,7 @@ const Home = () => {
           title: 'Cuenta creada con éxito',
         }).then(() => {
           // Redirigimos al usuario a la página principal
-          router.push('/index');
+          router.push('/');
         });
       } else {
         Swal.fire({

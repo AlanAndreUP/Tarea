@@ -54,8 +54,12 @@ const Home = () => {
             });
 
             if (response.ok) {
-                // Actualizar la lista de edificios después de borrar
-
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Eliminacion Correcta',
+                }).then(() => {
+                    router.push('/VistaAdministrador');
+                });
             } else {
                 console.error('Error al borrar el edificio');
             }

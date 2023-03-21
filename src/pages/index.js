@@ -43,6 +43,7 @@ const Home = () => {
           <div className="flex flex-col space-y-10 mt-4 mb-16">
             <div className="flex sm:space-x-8 sm:flex-row flex-col">
               <div>
+                <Link href="/VistaNoUser">
                 <h3 className="mb-1 font-medium text-lg">Locales</h3>
                 <Image
                   alt="Locales"
@@ -51,8 +52,10 @@ const Home = () => {
                   width={400}
                   height={400}
                 />
+                </Link>
               </div>
               <div className="sm:mt-0 mt-8">
+              <Link href="/VistaNoUser">
                 <h3 className="mb-1 font-medium text-lg">Edificios</h3>
                 <Image
                   alt="Edificios"
@@ -61,7 +64,9 @@ const Home = () => {
                   src="/10.png"
                   className="w-full object-cover h-96 rounded-2xl sm:mt-0 mt-2"
                 />
+                </Link>
               </div>
+              
             </div>
           </div>
         </div>

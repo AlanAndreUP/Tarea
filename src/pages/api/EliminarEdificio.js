@@ -13,15 +13,32 @@ export default async function handler(req, res) {
     }
 
     const edificios = content.split('\n').map((linea) => linea.split(', '));
+    // Eliminar cualquier fila vacía al final de la matriz
+    if (edificios[edificios.length - 1].length === 1 && edificios[edificios.length - 1][0] === '') {
+      edificios.pop();
+    }
     const edificiosEnFilas = [];
     for (let i = 0; i < edificios.length; i += 4) {
       edificiosEnFilas.push(edificios.slice(i, i + 4));
     }
+    
+    console.log(edificiosEnFilas.length);
+    const valoresColumna = [];
 
+    for (let i = 0; i < edificiosEnFilas.length; i++) {
+      const valor = edificiosEnFilas[i][0][0];
+      valoresColumna.push(valor);
+      console.log(valoresColumna);
+    }
+    
+    
+    
+    
     let usuarioValido = false;
     let indiceFila = -1;
     for (let i = 0; i < edificiosEnFilas.length; i++) {
       const id = edificiosEnFilas[i][0][0];
+      console.log(id,value);
       if (id == value) {
         usuarioValido = true;
         indiceFila = i;

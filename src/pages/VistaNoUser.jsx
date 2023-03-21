@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from 'framer-motion';
-import Header from "../components/Header1";
+import Header from "../components/Header";
 import styles from '@/styles/Home.module.css'
 import { useRouter } from 'next/router';
 import Swal from 'sweetalert2';
@@ -40,8 +40,8 @@ const Home = () => {
   const handleClick = async () => {
 
     Swal.fire({
-      icon: 'success',
-      title: 'Renta Exitosa',
+      icon: 'error',
+      title: 'No puedes Rentar necesitas Iniciar Sesion ',
     }).then(() => {
       router.push('/VistaUsuario');
     });
