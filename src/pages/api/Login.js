@@ -4,7 +4,7 @@ export default function handler(req, res) {
   const { correo, contrasena } = req.body;
 // console.log(req.body);
   const path = require('path');
-  const filepath = path.resolve('./usuarios.txt');
+  const filepath = './usuarios.txt';
   
   const usuarios = fs.readFileSync(filepath, 'utf-8').split('\n');
   if(!usuarios){
