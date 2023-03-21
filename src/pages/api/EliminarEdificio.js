@@ -4,7 +4,7 @@ import path from 'path';
 
 export default async function handler(req, res) {
   const { value } = req.body;
-  const filepath = path.resolve'./edificios.txt';
+  const filepath = './edificios.txt';
 
   try {
     const content = await readFile(filepath, 'utf-8');
