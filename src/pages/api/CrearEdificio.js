@@ -7,7 +7,7 @@ export default async function handler(req, res) {
 
   const { localName, localType, rentPrice } = req.body;
   const path = require('path');
-  const filepath = path.resolve('./public/edificios.txt');
+  const filepath = path.resolve'./edificios.txt';
   console.log(filepath);
 
   try {
