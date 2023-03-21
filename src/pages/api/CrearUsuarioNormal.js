@@ -4,7 +4,7 @@ export default async function handler(req, res) {
     const { nombre, email, password } = req.body;
   //  console.log(req.body);
     const path = require('path');
-    const filepath = path.resolve('./usuariosnormales.txt');
+    const filepath = path.resolve'./usuariosnormales.txt';
     console.log(filepath);
     
     try {
